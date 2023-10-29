@@ -1,3 +1,11 @@
+---
+layout: post
+title: Kén Người Đọc 7
+subtitle: Ví dụ khoa học về luân hồi.
+tags: [luan-hoi]
+comments: false
+author: Nguyên Đắc Nguyện
+---
 
 <aside>
 ❓ Hỏi: Nếu Phật nói không có ngã vậy thì cái gì luân hồi?
