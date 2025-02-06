@@ -33,7 +33,7 @@ Nay, có thể ví họ giống như những người dính chắc vào điều 
 Đáng tiếc ở chỗ là họ thậm chí có thể sẽ đẩy những người hiểu được tinh thần hòa hợp tăng của Thế Tôn ra rìa. 
 Những người đang ở nơi Trung Đạo, không phù bên này cũng không chống bên kia, không bài xích bên nào.
 Giống như Đức Phật, những bậc đáng kính cũng không đòi hỏi ai phải theo mình, phải nghe mình. Họ chỉ cần là họ, người khác tự nhận ra phẩm chất của các ngài mà tin tưởng nghe theo.
-Rồi "họ" cũng có thể không thèm nghe lời những bậc khả kính ở đời. Vài người trong số họ chủ chương "học Phật không học tổ". 
+Rồi những người bài xích cũng có thể không thèm nghe lời những bậc khả kính ở đời. Vài người trong số họ chủ chương "học Phật không học tổ". 
 
 ? Tôi tự hỏi không biết họ ở chỗ nào trên cái spectrum từ dễ dạy tới khó dạy nhất. 
 
