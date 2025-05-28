@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Stress-Disease Knowledge Graph</title>
+  <script type="text/javascript" src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
+  <link href="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.css" rel="stylesheet" />
+  <style>
+    #network {
+      width: 100vw;
+      height: 90vh;
+      border: 1px solid lightgray;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Stress-Disease Knowledge Graph</h2>
+  <input type="file" id="fileInput" accept=".json">
+  <div id="network"></div>
+  <script>
+    document.getElementById('fileInput').addEventListener('change', function (event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        const data = JSON.parse(e.target.result);
+        renderGraph(data);
+      };
+      reader.readAsText(file);
+    });
+    // Load default JSON on page load
+    window.addEventListener('DOMContentLoaded', function () {
+      fetch('./stress-desease-vi.json')
+        .then(response => response.json())
+        .then(data => renderGraph(data))
+        .catch(err => console.error('Could not load default JSON:', err));
+    });
+    function renderGraph(data) {
+      // Build unique nodes
+      const nodesMap = {};
+      data.forEach(item => {
+        nodesMap[item.head] = {
+          id: item.head, label: item.head, group: item.head_type,
+          title: item.tooltip
+        };
+        nodesMap[item.tail] = { title: item.tooltip, id: item.tail, label: item.tail, group: item.tail_type };
+      });
+      const nodes = Object.values(nodesMap);
+
+      // Build edges
+      const edges = data.map((item, idx) => ({
+        from: item.head,
+        to: item.tail,
+        label: item.relation,
+        arrows: 'to',
+        font: { align: 'middle' }
+      }));
+
+      // vis-network options
+      const options = {
+        nodes: {
+          shape: 'box',
+          font: { size: 16 }
+        },
+        edges: {
+          smooth: true,
+          font: { size: 12, color: '#333' }
+        },
+        groups: {
+          Condition: { color: { background: '#ffcccc', border: '#b20000' } },
+          Body_System: { color: { background: '#ccffcc', border: '#006600' } },
+          Lifestyle_Factor: { color: { background: '#ccccff', border: '#000066' } },
+          Concept: { color: { background: '#fff2cc', border: '#b38f00' } },
+          Life_Event: { color: { background: '#e0ccff', border: '#5e00b2' } },
+          Psychological_State: { color: { background: '#ccf2ff', border: '#007a99' } },
+          Treatment: { color: { background: '#ffe6cc', border: '#b26b00' } },
+          Symptom: { color: { background: '#ffd6e0', border: '#b2004b' } }
+        },
+        physics: {
+          stabilization: false,
+          barnesHut: { gravitationalConstant: -30000 }
+        }
+      };
+
+      const container = document.getElementById('network');
+      const network = new vis.Network(container, { nodes, edges }, options);
+    }
+  </script>
+</body>
+
+</html>
