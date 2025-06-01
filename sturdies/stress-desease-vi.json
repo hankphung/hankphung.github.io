@@ -1,9 +1,121 @@
 [
   {
+    "head": "Thiền định",
+    "head_type": "Remedy",
+    "relation": "REDUCES",
+    "tail": "Tổn thương cũ",
+    "tail_type": "Psychological_Factor"
+  },
+  {
+    "tail": " Sang Chấn Liên Thế Hệ",
+    "tail_type": "Psychological_Factor",
+    "relation": "Bao gồm",
+    "head": "Tổn thương cũ",
+    "head_type": "Psychological_Factor"
+  },
+  {
+    "head": "Thiền định",
+    "head_type": "Remedy",
+    "relation": "REDUCES",
+    "tail": "Nghiện",
+    "tail_type": "Condition"
+  },
+  {
+    "head": "Liệu pháp Hệ thống Gia đình Nội tâm (IFS)",
+    "head_type": "Remedy",
+    "relation": "SUPPORTS_PROCESSING",
+    "tail": "Tổn thương cũ",
+    "tail_type": "Psychological_Factor"
+  },
+  {
+    "head": "Liệu pháp Hệ thống Gia đình Nội tâm (IFS)",
+    "head_type": "Remedy",
+    "relation": "SUPPORTS_PROCESSING",
+    "tail": "Nghiện",
+    "tail_type": "Condition"
+  },
+  {
+    "head": "Liệu pháp Hệ thống Gia đình Nội tâm (IFS)",
+    "head_type": "Remedy",
+    "relation": "RELEASES",
+    "tail": "Cảm xúc bị kìm nén",
+    "tail_type": "Condition"
+  },
+  {
+    "head": "Tổn thương cũ",
+    "head_type": "Psychological_Factor",
+    "relation": "INCREASES_RISK_OF",
+    "tail": "Lo lắng bất an",
+    "tail_type": "Condition"
+  },
+  {
+    "head": "Tổn thương cũ",
+    "head_type": "Psychological_Factor",
+    "relation": "INCREASES_RISK_OF",
+    "tail": "Trầm cảm",
+    "tail_type": "Condition"
+  },
+  {
+    "head": "Tổn thương cũ",
+    "head_type": "Psychological_Factor",
+    "relation": "INCREASES_RISK_OF",
+    "tail": "Căng thẳng mãn tính",
+    "tail_type": "Condition"
+  },
+  {
+    "head": "Tổn thương cũ",
+    "head_type": "Psychological_Factor",
+    "relation": "LEADS_TO",
+    "tail": "Cảm xúc bị kìm nén",
+    "tail_type": "Condition"
+  },
+  {
+    "head": "Tổn thương cũ",
+    "head_type": "Psychological_Factor",
+    "relation": "ALTERS",
+    "tail": "Chức năng miễn dịch",
+    "tail_type": "Body_System"
+  },
+  {
+    "head": "Cảm xúc bị kìm nén",
+    "head_type": "Condition",
+    "relation": "INCREASES_RISK_OF",
+    "tail": "Nghiện",
+    "tail_type": "Condition"
+  },
+  {
     "head": "Căng thẳng mãn tính",
     "head_type": "Condition",
     "relation": "INCREASES_RISK_OF",
-    "tail": "Lo âu",
+    "tail": "Nghiện",
+    "tail_type": "Condition"
+  },
+  {
+    "head": "Nghiện",
+    "head_type": "Condition",
+    "relation": "ASSOCIATED_WITH",
+    "tail": "Trầm cảm",
+    "tail_type": "Condition"
+  },
+  {
+    "head": "Nghiện",
+    "head_type": "Condition",
+    "relation": "ASSOCIATED_WITH",
+    "tail": "Lo lắng bất an",
+    "tail_type": "Condition"
+  },
+  {
+    "head": "Nghiện",
+    "head_type": "Condition",
+    "relation": "EXACERBATES",
+    "tail": "Căng thẳng mãn tính",
+    "tail_type": "Condition"
+  },
+  {
+    "head": "Căng thẳng mãn tính",
+    "head_type": "Condition",
+    "relation": "INCREASES_RISK_OF",
+    "tail": "Lo lắng bất an",
     "tail_type": "Condition",
     "group": "mental_health"
   },
@@ -26,14 +138,6 @@
   {
     "head": "Căng thẳng mãn tính",
     "head_type": "Condition",
-    "relation": "INCREASES_RISK_OF",
-    "tail": "Ung thư",
-    "tail_type": "Condition",
-    "group": "physical_health"
-  },
-  {
-    "head": "Căng thẳng mãn tính",
-    "head_type": "Condition",
     "relation": "AFFECTS",
     "tail": "Sức khỏe đường ruột",
     "tail_type": "Body_System",
@@ -42,21 +146,21 @@
   {
     "head": "Căng thẳng mãn tính",
     "head_type": "Condition",
-    "relation": "INCREASES",
-    "tail": "Viêm",
+    "relation": "Tăng mạnh (do histamin)",
+    "tail": "Viêm và dị ứng",
     "tail_type": "Biological_Process",
     "group": "physical_health"
   },
   {
     "head": "Căng thẳng mãn tính",
     "head_type": "Condition",
-    "relation": "SUPPRESSES",
+    "relation": "Làm suy giảm (do cortisol)",
     "tail": "Chức năng miễn dịch",
     "tail_type": "Body_System",
     "group": "physical_health"
   },
   {
-    "head": "Viêm",
+    "head": "Viêm và dị ứng",
     "head_type": "Biological_Process",
     "relation": "DISRUPTS",
     "tail": "Sức khỏe đường ruột",
@@ -64,7 +168,7 @@
     "group": "physical_health"
   },
   {
-    "head": "Viêm",
+    "head": "Viêm và dị ứng",
     "head_type": "Biological_Process",
     "relation": "INCREASES_RISK_OF",
     "tail": "Các bệnh mãn tính",
@@ -72,34 +176,26 @@
     "group": "physical_health"
   },
   {
-    "head": "Viêm",
-    "head_type": "Biological_Process",
-    "relation": "INCREASES_RISK_OF",
-    "tail": "Ung thư",
-    "tail_type": "Condition",
-    "group": "physical_health"
-  },
-  {
     "head": "Cảm xúc bị kìm nén",
-    "head_type": "Psychological_State",
+    "head_type": "Condition",
     "relation": "INCREASES",
-    "tail": "Viêm",
-    "tail_type": "Biological_Process",
+    "tail": "Căng thẳng mãn tính",
+    "tail_type": "Condition",
     "group": "mental_health"
   },
   {
     "head": "Trầm cảm",
     "head_type": "Condition",
     "relation": "ASSOCIATED_WITH",
-    "tail": "Viêm",
+    "tail": "Viêm và dị ứng",
     "tail_type": "Biological_Process",
     "group": "mental_health"
   },
   {
-    "head": "Lo âu",
+    "head": "Lo lắng bất an",
     "head_type": "Condition",
     "relation": "ASSOCIATED_WITH",
-    "tail": "Viêm",
+    "tail": "Viêm và dị ứng",
     "tail_type": "Biological_Process",
     "group": "mental_health"
   },
@@ -107,7 +203,7 @@
     "head": "Chế độ ăn uống",
     "head_type": "Lifestyle_Factor",
     "relation": "MODULATES",
-    "tail": "Viêm",
+    "tail": "Viêm và dị ứng",
     "tail_type": "Biological_Process",
     "group": "remedy"
   },
@@ -115,7 +211,7 @@
     "head": "Vận động",
     "head_type": "Lifestyle_Factor",
     "relation": "REDUCES",
-    "tail": "Viêm",
+    "tail": "Viêm và dị ứng",
     "tail_type": "Biological_Process",
     "group": "remedy"
   },
@@ -130,40 +226,24 @@
   {
     "head": "Chức năng miễn dịch",
     "head_type": "Body_System",
+    "relation": "Khi xuy yếu kéo theo",
+    "tail": "Các bệnh mãn tính",
+    "tail_type": "Condition",
+    "group": "physical_health"
+  },
+  {
+    "head": "Chức năng miễn dịch",
+    "head_type": "Body_System",
     "relation": "REGULATES",
-    "tail": "Viêm",
+    "tail": "Viêm và dị ứng",
     "tail_type": "Biological_Process",
     "group": "physical_health"
   },
   {
-    "head": "Chấn thương quá khứ",
-    "head_type": "Life_Event",
-    "relation": "INCREASES",
-    "tail": "Viêm",
-    "tail_type": "Biological_Process",
-    "group": "mental_health"
-  },
-  {
-    "head": "Chế độ ăn uống",
-    "head_type": "Lifestyle_Factor",
-    "relation": "AFFECTS",
-    "tail": "Sức khỏe đường ruột",
-    "tail_type": "Body_System",
-    "group": "remedy"
-  },
-  {
     "head": "Thiền định",
     "head_type": "Remedy",
     "relation": "REDUCES",
-    "tail": "Căng thẳng",
-    "tail_type": "Condition",
-    "group": "remedy"
-  },
-  {
-    "head": "Thiền định",
-    "head_type": "Remedy",
-    "relation": "REDUCES",
-    "tail": "Lo âu",
+    "tail": "Lo lắng bất an",
     "tail_type": "Condition",
     "group": "remedy"
   },
@@ -187,12 +267,12 @@
     "head": "Thiền định",
     "head_type": "Remedy",
     "relation": "DECREASES",
-    "tail": "Viêm",
+    "tail": "Viêm và dị ứng",
     "tail_type": "Biological_Process",
     "group": "remedy"
   },
   {
-    "head": "Chế độ ăn uống lành mạnh (ví dụ: Chế độ ăn Địa Trung Hải)",
+    "head": "Chế độ ăn uống",
     "head_type": "Remedy",
     "relation": "REGULATES",
     "tail": "Vi khuẩn đường ruột",
@@ -200,7 +280,7 @@
     "group": "remedy"
   },
   {
-    "head": "Chế độ ăn uống lành mạnh (ví dụ: Chế độ ăn Địa Trung Hải)",
+    "head": "Chế độ ăn uống",
     "head_type": "Remedy",
     "relation": "REDUCES_RISK_OF",
     "tail": "Trầm cảm",
@@ -208,7 +288,7 @@
     "group": "remedy"
   },
   {
-    "head": "Chế độ ăn uống lành mạnh (ví dụ: Chế độ ăn Địa Trung Hải)",
+    "head": "Chế độ ăn uống",
     "head_type": "Remedy",
     "relation": "IMPROVES",
     "tail": "Sức khỏe đường ruột",
@@ -217,34 +297,10 @@
     "tooltip": "Chế độ ăn uống lành mạnh có thể bao gồm các loại thực phẩm giàu chất xơ, probiotic và omega-3, giúp cải thiện sức khỏe đường ruột và giảm nguy cơ trầm cảm."
   },
   {
-    "head": "Liệu pháp nhận thức hành vi (CBT)",
-    "head_type": "Remedy",
-    "relation": "REDUCES",
-    "tail": "Lo âu",
-    "tail_type": "Condition",
-    "group": "remedy"
-  },
-  {
-    "head": "Liệu pháp nhận thức hành vi (CBT)",
-    "head_type": "Remedy",
-    "relation": "REDUCES",
-    "tail": "Trầm cảm",
-    "tail_type": "Condition",
-    "group": "remedy"
-  },
-  {
     "head": "Vận động",
     "head_type": "Remedy",
     "relation": "REDUCES_RISK_OF",
     "tail": "Các bệnh mãn tính",
-    "tail_type": "Condition",
-    "group": "remedy"
-  },
-  {
-    "head": "Vận động",
-    "head_type": "Remedy",
-    "relation": "REDUCES",
-    "tail": "Căng thẳng",
     "tail_type": "Condition",
     "group": "remedy"
   },
@@ -259,17 +315,9 @@
   {
     "head": "Thiền định",
     "head_type": "Remedy",
-    "relation": "HELPS_PROCESS",
-    "tail": "Chấn thương quá khứ",
-    "tail_type": "Life_Event",
-    "group": "remedy"
-  },
-  {
-    "head": "Thiền định",
-    "head_type": "Remedy",
     "relation": "REDUCES",
     "tail": "Cảm xúc bị kìm nén",
-    "tail_type": "Psychological_State",
+    "tail_type": "Condition",
     "group": "remedy"
   },
   {
@@ -284,7 +332,7 @@
     "head": "Vận động",
     "head_type": "Lifestyle_Factor",
     "relation": "REDUCES_RISK_OF",
-    "tail": "Lo âu",
+    "tail": "Lo lắng bất an",
     "tail_type": "Condition",
     "group": "remedy"
   },
@@ -297,66 +345,26 @@
     "group": "remedy"
   },
   {
-    "head": "Vận động",
-    "head_type": "Lifestyle_Factor",
-    "relation": "REDUCES_RISK_OF",
-    "tail": "Các bệnh mãn tính",
-    "tail_type": "Condition",
-    "group": "remedy"
-  },
-  {
-    "head": "Chấn thương quá khứ",
-    "head_type": "Life_Event",
-    "relation": "INCREASES_RISK_OF",
-    "tail": "Căng thẳng mãn tính",
-    "tail_type": "Condition",
-    "group": "mental_health"
-  },
-  {
-    "head": "Chấn thương quá khứ",
-    "head_type": "Life_Event",
-    "relation": "LEADS_TO",
-    "tail": "Cảm xúc bị kìm nén",
-    "tail_type": "Psychological_State",
-    "group": "mental_health"
-  },
-  {
     "head": "Cảm xúc bị kìm nén",
-    "head_type": "Psychological_State",
-    "relation": "INCREASES_RISK_OF",
-    "tail": "Lo âu",
-    "tail_type": "Condition",
-    "group": "mental_health"
-  },
-  {
-    "head": "Cảm xúc bị kìm nén",
-    "head_type": "Psychological_State",
-    "relation": "INCREASES_RISK_OF",
-    "tail": "Trầm cảm",
-    "tail_type": "Condition",
-    "group": "mental_health"
-  },
-  {
-    "head": "Cảm xúc bị kìm nén",
-    "head_type": "Psychological_State",
-    "relation": "INCREASES_RISK_OF",
-    "tail": "Các bệnh mãn tính",
-    "tail_type": "Condition",
-    "group": "physical_health"
-  },
-  {
-    "head": "Căng thẳng",
     "head_type": "Condition",
-    "relation": "AFFECTS",
-    "tail": "Sức khỏe đường ruột",
-    "tail_type": "Body_System",
+    "relation": "INCREASES_RISK_OF",
+    "tail": "Lo lắng bất an",
+    "tail_type": "Condition",
+    "group": "mental_health"
+  },
+  {
+    "head": "Cảm xúc bị kìm nén",
+    "head_type": "Condition",
+    "relation": "INCREASES_RISK_OF",
+    "tail": "Các bệnh mãn tính",
+    "tail_type": "Condition",
     "group": "physical_health"
   },
   {
     "head": "Sức khỏe đường ruột",
     "head_type": "Body_System",
     "relation": "MODULATES",
-    "tail": "Lo âu",
+    "tail": "Lo lắng bất an",
     "tail_type": "Condition",
     "group": "physical_health"
   },
@@ -371,7 +379,7 @@
   {
     "head": "Các bệnh mãn tính",
     "head_type": "Condition",
-    "relation": "INCREASES_RISK_OF",
+    "relation": "GỒM CẢ",
     "tail": "Ung thư",
     "tail_type": "Condition",
     "group": "physical_health"

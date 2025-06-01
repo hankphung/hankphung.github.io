@@ -80,13 +80,21 @@
           Symptom: { color: { background: '#ffd6e0', border: '#b2004b' } }
         },
         physics: {
-          stabilization: false,
+          stabilization: true,
           barnesHut: { gravitationalConstant: -30000 }
         }
       };
 
       const container = document.getElementById('network');
       const network = new vis.Network(container, { nodes, edges }, options);
+
+      // var clustering_ops = {
+      //   joinCondition: function (nodeOptions) {
+      //     return nodeOptions.group === 'Condition' || nodeOptions.group === 'Symptom';
+      //   }
+      // }
+
+      // network.clustering.cluster(clustering_ops);
     }
   </script>
 </body>
