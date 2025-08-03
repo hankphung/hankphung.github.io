@@ -59,7 +59,7 @@
     "head": "Tổn thương cũ",
     "head_type": "Psychological_Factor",
     "relation": "INCREASES_RISK_OF",
-    "tail": "Căng thẳng mãn tính",
+    "tail": "Căng thẳng (kể cả mãn tính)",
     "tail_type": "Condition"
   },
   {
@@ -70,13 +70,6 @@
     "tail_type": "Condition"
   },
   {
-    "head": "Tổn thương cũ",
-    "head_type": "Psychological_Factor",
-    "relation": "ALTERS",
-    "tail": "Chức năng miễn dịch",
-    "tail_type": "Body_System"
-  },
-  {
     "head": "Cảm xúc bị kìm nén",
     "head_type": "Condition",
     "relation": "INCREASES_RISK_OF",
@@ -84,7 +77,7 @@
     "tail_type": "Condition"
   },
   {
-    "head": "Căng thẳng mãn tính",
+    "head": "Căng thẳng (kể cả mãn tính)",
     "head_type": "Condition",
     "relation": "INCREASES_RISK_OF",
     "tail": "Nghiện",
@@ -108,11 +101,11 @@
     "head": "Nghiện",
     "head_type": "Condition",
     "relation": "EXACERBATES",
-    "tail": "Căng thẳng mãn tính",
+    "tail": "Căng thẳng (kể cả mãn tính)",
     "tail_type": "Condition"
   },
   {
-    "head": "Căng thẳng mãn tính",
+    "head": "Căng thẳng (kể cả mãn tính)",
     "head_type": "Condition",
     "relation": "INCREASES_RISK_OF",
     "tail": "Lo lắng bất an",
@@ -120,7 +113,7 @@
     "group": "mental_health"
   },
   {
-    "head": "Căng thẳng mãn tính",
+    "head": "Căng thẳng (kể cả mãn tính)",
     "head_type": "Condition",
     "relation": "INCREASES_RISK_OF",
     "tail": "Trầm cảm",
@@ -128,7 +121,7 @@
     "group": "mental_health"
   },
   {
-    "head": "Căng thẳng mãn tính",
+    "head": "Căng thẳng (kể cả mãn tính)",
     "head_type": "Condition",
     "relation": "INCREASES_RISK_OF",
     "tail": "Các bệnh mãn tính",
@@ -136,31 +129,135 @@
     "group": "physical_health"
   },
   {
-    "head": "Căng thẳng mãn tính",
-    "head_type": "Condition",
+    "head": "Vận động",
+    "head_type": "Pillar",
+    "relation": "IMPROVES",
+    "tail": "Chất lượng giấc ngủ",
+    "tail_type": "Pillar",
+    "group": "Pillar",
+    "tooltip": "Vận động thường xuyên giúp cải thiện chất lượng giấc ngủ thông qua việc điều hòa hormone và giảm căng thẳng."
+  },
+  {
+    "head": "Histamine",
+    "head_type": "Biological_Molecule",
     "relation": "AFFECTS",
     "tail": "Sức khỏe đường ruột",
     "tail_type": "Body_System",
     "group": "physical_health"
   },
   {
-    "head": "Căng thẳng mãn tính",
-    "head_type": "Condition",
-    "relation": "Tăng mạnh (do histamin)",
-    "tail": "Viêm và dị ứng",
+    "head": "Cortisol + Adrenaline",
+    "head_type": "Hormone",
+    "relation": "Làm tăng cường",
+    "tail": "Các chứng viêm ",
     "tail_type": "Biological_Process",
     "group": "physical_health"
   },
   {
-    "head": "Căng thẳng mãn tính",
+    "head": "Cortisol + Adrenaline",
+    "head_type": "Hormone",
+    "relation": "AFFECTS",
+    "tail": "Sức khỏe đường ruột",
+    "tail_type": "Body_System",
+    "group": "physical_health"
+  },
+  {
+    "head": "Căng thẳng (kể cả mãn tính)",
     "head_type": "Condition",
-    "relation": "Làm suy giảm (do cortisol)",
+    "relation": "INCREASES",
+    "tail": "Histamine",
+    "tail_type": "Biological_Molecule",
+    "group": "physical_health"
+  },
+  {
+    "head": "Vận động",
+    "head_type": "Pillar",
+    "relation": "REDUCES",
+    "tail": "Cortisol + Adrenaline",
+    "tail_type": "Hormone",
+    "group": "remedy",
+    "tooltip": "Vận động giúp giảm mức cortisol và adrenaline, hỗ trợ kiểm soát căng thẳng."
+  },
+  {
+    "head": "Vận động",
+    "head_type": "Pillar",
+    "relation": "INCREASES",
+    "tail": "Endorphin",
+    "tail_type": "Hormone",
+    "group": "remedy",
+    "tooltip": "Vận động thúc đẩy sản xuất endorphin, giúp cải thiện tâm trạng và giảm đau."
+  },
+  {
+    "head": "Vận động",
+    "head_type": "Pillar",
+    "relation": "INCREASES",
+    "tail": "Myokine",
+    "tail_type": "Biological_Molecule",
+    "group": "remedy",
+    "tooltip": "Vận động làm tăng tiết myokine, hỗ trợ điều hòa viêm và trao đổi chất."
+  },
+  {
+    "head": "Myokine",
+    "head_type": "Biological_Molecule",
+    "relation": "MODULATES",
+    "tail": "Các chứng viêm ",
+    "tail_type": "Biological_Process",
+    "group": "physical_health",
+    "tooltip": "Myokine do cơ tiết ra khi vận động giúp điều hòa các phản ứng viêm trong cơ thể."
+  },
+  {
+    "head": "Myokine",
+    "head_type": "Biological_Molecule",
+    "relation": "IMPROVES",
+    "tail": "Chức năng miễn dịch",
+    "tail_type": "Body_System",
+    "group": "physical_health",
+    "tooltip": "Myokine hỗ trợ tăng cường chức năng miễn dịch thông qua tác động lên các tế bào miễn dịch."
+  },
+  {
+    "head": "Endorphin",
+    "head_type": "Hormone",
+    "relation": "REDUCES",
+    "tail": "Các chứng viêm ",
+    "tail_type": "Biological_Process",
+    "group": "physical_health",
+    "tooltip": "Endorphin giúp giảm các phản ứng viêm bằng cách điều hòa hệ miễn dịch và giảm stress."
+  },
+  {
+    "head": "Endorphin",
+    "head_type": "Hormone",
+    "relation": "IMPROVES",
+    "tail": "Chức năng miễn dịch",
+    "tail_type": "Body_System",
+    "group": "physical_health",
+    "tooltip": "Endorphin tăng cường sức đề kháng bằng cách hỗ trợ hoạt động của hệ miễn dịch."
+  },
+  {
+    "head": "Histamine",
+    "head_type": "Biological_Molecule",
+    "relation": "PROMOTES",
+    "tail": "Các chứng viêm ",
+    "tail_type": "Biological_Process",
+    "group": "physical_health"
+  },
+  {
+    "head": "Căng thẳng (kể cả mãn tính)",
+    "head_type": "Condition",
+    "relation": "INCREASES",
+    "tail": "Cortisol + Adrenaline",
+    "tail_type": "Hormone",
+    "group": "physical_health"
+  },
+  {
+    "head": "Cortisol + Adrenaline",
+    "head_type": "Hormone",
+    "relation": "Ảnh hưởng",
     "tail": "Chức năng miễn dịch",
     "tail_type": "Body_System",
     "group": "physical_health"
   },
   {
-    "head": "Viêm và dị ứng",
+    "head": "Các chứng viêm ",
     "head_type": "Biological_Process",
     "relation": "DISRUPTS",
     "tail": "Sức khỏe đường ruột",
@@ -168,7 +265,7 @@
     "group": "physical_health"
   },
   {
-    "head": "Viêm và dị ứng",
+    "head": "Các chứng viêm ",
     "head_type": "Biological_Process",
     "relation": "INCREASES_RISK_OF",
     "tail": "Các bệnh mãn tính",
@@ -179,7 +276,7 @@
     "head": "Cảm xúc bị kìm nén",
     "head_type": "Condition",
     "relation": "INCREASES",
-    "tail": "Căng thẳng mãn tính",
+    "tail": "Căng thẳng (kể cả mãn tính)",
     "tail_type": "Condition",
     "group": "mental_health"
   },
@@ -187,31 +284,15 @@
     "head": "Trầm cảm",
     "head_type": "Condition",
     "relation": "ASSOCIATED_WITH",
-    "tail": "Viêm và dị ứng",
-    "tail_type": "Biological_Process",
-    "group": "mental_health"
-  },
-  {
-    "head": "Lo lắng bất an",
-    "head_type": "Condition",
-    "relation": "ASSOCIATED_WITH",
-    "tail": "Viêm và dị ứng",
+    "tail": "Các chứng viêm ",
     "tail_type": "Biological_Process",
     "group": "mental_health"
   },
   {
     "head": "Chế độ ăn uống",
-    "head_type": "Lifestyle_Factor",
+    "head_type": "Pillar",
     "relation": "MODULATES",
-    "tail": "Viêm và dị ứng",
-    "tail_type": "Biological_Process",
-    "group": "remedy"
-  },
-  {
-    "head": "Vận động",
-    "head_type": "Lifestyle_Factor",
-    "relation": "REDUCES",
-    "tail": "Viêm và dị ứng",
+    "tail": "Các chứng viêm ",
     "tail_type": "Biological_Process",
     "group": "remedy"
   },
@@ -235,7 +316,7 @@
     "head": "Chức năng miễn dịch",
     "head_type": "Body_System",
     "relation": "REGULATES",
-    "tail": "Viêm và dị ứng",
+    "tail": "Các chứng viêm ",
     "tail_type": "Biological_Process",
     "group": "physical_health"
   },
@@ -256,40 +337,34 @@
     "group": "remedy"
   },
   {
-    "head": "Thiền định",
-    "head_type": "Remedy",
+    "head": "Vận động",
+    "head_type": "Pillar",
+    "relation": "REDUCES",
+    "tail": "Căng thẳng (kể cả mãn tính)",
+    "tail_type": "Condition",
+    "group": "remedy",
+    "tooltip": "Vận động thường xuyên giúp giảm mức độ căng thẳng (kể cả mãn tính) thông qua việc giải phóng endorphin và cải thiện sức khỏe tâm thần."
+  },
+  {
+    "head": "Lo lắng bất an",
+    "head_type": "Condition",
+    "relation": "INCREASES",
+    "tail": "Căng thẳng (kể cả mãn tính)",
+    "tail_type": "Condition",
+    "group": "mental_health"
+  },
+  {
+    "head": "Chế độ ăn uống",
+    "head_type": "Pillar",
     "relation": "IMPROVES",
     "tail": "Chức năng miễn dịch",
     "tail_type": "Body_System",
-    "group": "remedy"
-  },
-  {
-    "head": "Thiền định",
-    "head_type": "Remedy",
-    "relation": "DECREASES",
-    "tail": "Viêm và dị ứng",
-    "tail_type": "Biological_Process",
-    "group": "remedy"
+    "group": "remedy",
+    "tooltip": "Chế độ ăn uống lành mạnh giúp tăng cường chức năng miễn dịch thông qua việc cung cấp vitamin, khoáng chất và các chất chống oxy hóa cần thiết."
   },
   {
     "head": "Chế độ ăn uống",
-    "head_type": "Remedy",
-    "relation": "REGULATES",
-    "tail": "Vi khuẩn đường ruột",
-    "tail_type": "Body_System",
-    "group": "remedy"
-  },
-  {
-    "head": "Chế độ ăn uống",
-    "head_type": "Remedy",
-    "relation": "REDUCES_RISK_OF",
-    "tail": "Trầm cảm",
-    "tail_type": "Condition",
-    "group": "remedy"
-  },
-  {
-    "head": "Chế độ ăn uống",
-    "head_type": "Remedy",
+    "head_type": "Pillar",
     "relation": "IMPROVES",
     "tail": "Sức khỏe đường ruột",
     "tail_type": "Body_System",
@@ -298,7 +373,7 @@
   },
   {
     "head": "Vận động",
-    "head_type": "Remedy",
+    "head_type": "Pillar",
     "relation": "REDUCES_RISK_OF",
     "tail": "Các bệnh mãn tính",
     "tail_type": "Condition",
@@ -308,7 +383,7 @@
     "head": "Thiền định",
     "head_type": "Remedy",
     "relation": "REDUCES",
-    "tail": "Căng thẳng mãn tính",
+    "tail": "Căng thẳng (kể cả mãn tính)",
     "tail_type": "Condition",
     "group": "remedy"
   },
@@ -322,7 +397,7 @@
   },
   {
     "head": "Chế độ ăn uống",
-    "head_type": "Lifestyle_Factor",
+    "head_type": "Pillar",
     "relation": "AFFECTS",
     "tail": "Các bệnh mãn tính",
     "tail_type": "Condition",
@@ -330,7 +405,7 @@
   },
   {
     "head": "Vận động",
-    "head_type": "Lifestyle_Factor",
+    "head_type": "Pillar",
     "relation": "REDUCES_RISK_OF",
     "tail": "Lo lắng bất an",
     "tail_type": "Condition",
@@ -338,7 +413,7 @@
   },
   {
     "head": "Vận động",
-    "head_type": "Lifestyle_Factor",
+    "head_type": "Pillar",
     "relation": "REDUCES_RISK_OF",
     "tail": "Trầm cảm",
     "tail_type": "Condition",
@@ -371,7 +446,15 @@
   {
     "head": "Sức khỏe đường ruột",
     "head_type": "Body_System",
-    "relation": "Sản sinh Serotonin (80-90%)",
+    "relation": "AFFECTS",
+    "tail": "Các hormone liên quan đến trầm cảm(Serotonin)",
+    "tail_type": "Hormone",
+    "group": "physical_health"
+  },
+  {
+    "head": "Các hormone liên quan đến trầm cảm(Serotonin)",
+    "head_type": "Hormone",
+    "relation": "INFLUENCES",
     "tail": "Trầm cảm",
     "tail_type": "Condition",
     "group": "physical_health"
@@ -383,5 +466,68 @@
     "tail": "Ung thư",
     "tail_type": "Condition",
     "group": "physical_health"
+  },
+  {
+    "head": "Chất lượng giấc ngủ",
+    "head_type": "Pillar",
+    "relation": "AFFECTED_BY",
+    "tail": "Căng thẳng (kể cả mãn tính)",
+    "tail_type": "Condition"
+  },
+  {
+    "head": "Chất lượng giấc ngủ",
+    "head_type": "Pillar",
+    "relation": "AFFECTED_BY",
+    "tail": "Lo lắng bất an",
+    "tail_type": "Condition"
+  },
+  {
+    "head": "Chất lượng giấc ngủ",
+    "head_type": "Pillar",
+    "relation": "AFFECTED_BY",
+    "tail": "Trầm cảm",
+    "tail_type": "Condition"
+  },
+  {
+    "head": "Căng thẳng (kể cả mãn tính)",
+    "head_type": "Condition",
+    "relation": "REDUCES",
+    "tail": "Chất lượng giấc ngủ",
+    "tail_type": "Pillar"
+  },
+  {
+    "head": "Lo lắng bất an",
+    "head_type": "Condition",
+    "relation": "REDUCES",
+    "tail": "Chất lượng giấc ngủ",
+    "tail_type": "Pillar"
+  },
+  {
+    "head": "Trầm cảm",
+    "head_type": "Condition",
+    "relation": "REDUCES",
+    "tail": "Chất lượng giấc ngủ",
+    "tail_type": "Pillar"
+  },
+  {
+    "head": "Chất lượng giấc ngủ",
+    "head_type": "Pillar",
+    "relation": "AFFECTS",
+    "tail": "Chức năng miễn dịch",
+    "tail_type": "Body_System"
+  },
+  {
+    "head": "Chất lượng giấc ngủ",
+    "head_type": "Pillar",
+    "relation": "AFFECTS",
+    "tail": "Các chứng viêm ",
+    "tail_type": "Biological_Process"
+  },
+  {
+    "head": "Chất lượng giấc ngủ",
+    "head_type": "Pillar",
+    "relation": "Khi giảm sút thì kéo theo",
+    "tail": "Các bệnh mãn tính",
+    "tail_type": "Condition"
   }
 ]

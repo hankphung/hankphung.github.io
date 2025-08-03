@@ -1,0 +1,202 @@
+[
+  {
+    "head": "Facts",
+    "head_type": "Center_Node",
+    "relation": "STATISTIC",
+    "tail": "Khoảng 20-30% bệnh nhân ung thư tử vong sớm do các phương pháp điều trị như hóa trị hoặc xạ trị",
+    "tail_type": "Statistic"
+  },
+  {
+    "tail": " Sang Chấn Liên Thế Hệ",
+    "tail_type": "Psychological_Factor",
+    "relation": "Bao gồm",
+    "head": "Tổn thương cũ",
+    "head_type": "Psychological_Factor"
+  },
+  {
+    "head": "Tổn thương cũ",
+    "head_type": "Psychological_Factor",
+    "relation": "INCREASES_RISK_OF",
+    "tail": "Căng thẳng (kể cả mãn tính)",
+    "tail_type": "Condition"
+  },
+  {
+    "head": "Căng thẳng (kể cả mãn tính)",
+    "head_type": "Condition",
+    "relation": "INCREASES_RISK_OF",
+    "tail": "Lo lắng bất an",
+    "tail_type": "Condition",
+    "group": "mental_health"
+  },
+  {
+    "head": "Ung thư",
+    "head_type": "Condition",
+    "relation": "DẪN TỚI",
+    "tail": "Phẫu thuật",
+    "tail_type": "Treatment"
+  },
+  {
+    "head": "Phẫu thuật",
+    "head_type": "Treatment",
+    "relation": "DẪN TỚI",
+    "tail": "Những cơn đau",
+    "tail_type": "Condition"
+  },
+  {
+    "head": "Căng thẳng (kể cả mãn tính)",
+    "head_type": "Condition",
+    "relation": "DISRUPTS",
+    "tail": "Giấc ngủ",
+    "tail_type": "Body_Function",
+    "group": "mental_health"
+  },
+  {
+    "head": "Giấc ngủ",
+    "head_type": "Body_Function",
+    "relation": "Khi xuy giảm kéo theo",
+    "tail": "Căng thẳng (kể cả mãn tính)",
+    "tail_type": "Condition",
+    "group": "mental_health"
+  },
+  {
+    "head": "Phẫu thuật",
+    "head_type": "Treatment",
+    "relation": "DẪN TỚI",
+    "tail": "Lo lắng bất an",
+    "tail_type": "Condition"
+  },
+  {
+    "head": "Phẫu thuật",
+    "head_type": "Treatment",
+    "relation": "DẪN TỚI",
+    "tail": "Căng thẳng (kể cả mãn tính)",
+    "tail_type": "Condition"
+  },
+  {
+    "head": "Những cơn đau",
+    "head_type": "Condition",
+    "relation": "DẪN TỚI",
+    "tail": "Căng thẳng (kể cả mãn tính)",
+    "tail_type": "Condition"
+  },
+  {
+    "head": "Những cơn đau",
+    "head_type": "Condition",
+    "relation": "DẪN TỚI",
+    "tail": "Lo lắng bất an",
+    "tail_type": "Condition"
+  },
+  {
+    "head": "Căng thẳng (kể cả mãn tính)",
+    "head_type": "Condition",
+    "relation": "INCREASES_RISK_OF",
+    "tail": "Ung thư",
+    "tail_type": "Condition",
+    "group": "physical_health"
+  },
+  {
+    "head": "Cortisol + Adrenaline",
+    "head_type": "Hormone",
+    "relation": "PROMOTES",
+    "tail": "Viêm và dị ứng",
+    "tail_type": "Biological_Process",
+    "group": "physical_health"
+  },
+  {
+    "head": "Histamin",
+    "head_type": "Biological_Molecule",
+    "relation": "PROMOTES",
+    "tail": "Viêm và dị ứng",
+    "tail_type": "Biological_Process",
+    "group": "physical_health"
+  },
+  {
+    "head": "Căng thẳng (kể cả mãn tính)",
+    "head_type": "Condition",
+    "relation": "INCREASES",
+    "tail": "Cortisol + Adrenaline",
+    "tail_type": "Hormone",
+    "group": "physical_health"
+  },
+  {
+    "head": "Cortisol + Adrenaline",
+    "head_type": "Hormone",
+    "relation": "Làm suy giảm",
+    "tail": "Chức năng miễn dịch",
+    "tail_type": "Body_System",
+    "group": "physical_health"
+  },
+  {
+    "head": "Viêm và dị ứng",
+    "head_type": "Biological_Process",
+    "relation": "DISRUPTS",
+    "tail": "Sức khỏe đường ruột",
+    "tail_type": "Body_System",
+    "group": "physical_health"
+  },
+  {
+    "head": "Chức năng miễn dịch",
+    "head_type": "Body_System",
+    "relation": "Khi xuy yếu kéo theo",
+    "tail": "Ung thư",
+    "tail_type": "Condition",
+    "group": "physical_health"
+  },
+  {
+    "head": "Lo lắng bất an",
+    "head_type": "Condition",
+    "relation": "INCREASES",
+    "tail": "Căng thẳng (kể cả mãn tính)",
+    "tail_type": "Condition",
+    "group": "mental_health"
+  },
+  {
+    "head": "Ung thư",
+    "head_type": "Condition",
+    "relation": "TẠO RA",
+    "tail": "Tâm lý người bệnh",
+    "tail_type": "Psychological_Factor"
+  },
+  {
+    "head": "Tâm lý người bệnh",
+    "head_type": "Psychological_Factor",
+    "relation": "TẠO RA",
+    "tail": "Căng thẳng (kể cả mãn tính)",
+    "tail_type": "Condition"
+  },
+  {
+    "head": "Tâm lý người bệnh",
+    "head_type": "Psychological_Factor",
+    "relation": "TẠO RA",
+    "tail": "Lo lắng bất an",
+    "tail_type": "Condition"
+  },
+  {
+    "head": "Ung thư",
+    "head_type": "Condition",
+    "relation": "DẪN TỚI",
+    "tail": "Hoá trị hoặc xạ trị",
+    "tail_type": "Treatment"
+  },
+  {
+    "head": "Hoá trị hoặc xạ trị",
+    "head_type": "Treatment",
+    "relation": "DẪN TỚI",
+    "tail": "Những cơn đau",
+    "tail_type": "Condition"
+  },
+  {
+    "head": "Hoá trị hoặc xạ trị",
+    "head_type": "Treatment",
+    "relation": "DẪN TỚI",
+    "tail": "Căng thẳng (kể cả mãn tính)",
+    "tail_type": "Condition"
+  },
+  {
+    "head": "Ung thư",
+    "head_type": "Condition",
+    "relation": "TẠO RA",
+    "tail": "Những cơn đau",
+    "tail_type": "Condition"
+  }
+]
