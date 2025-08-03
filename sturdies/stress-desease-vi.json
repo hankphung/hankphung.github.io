@@ -3,15 +3,23 @@
     "head": "Thiền định",
     "head_type": "Remedy",
     "relation": "REDUCES",
-    "tail": "Tổn thương cũ",
+    "tail": "Tổn thương quá khứ | Nội kết (Exiles ) ",
     "tail_type": "Psychological_Factor"
   },
   {
     "tail": " Sang Chấn Liên Thế Hệ",
     "tail_type": "Psychological_Factor",
     "relation": "Bao gồm",
-    "head": "Tổn thương cũ",
+    "head": "Tổn thương quá khứ | Nội kết (Exiles ) ",
     "head_type": "Psychological_Factor"
+  },
+  {
+    "head": "Các bệnh mãn tính",
+    "head_type": "Condition",
+    "relation": "GỒM CẢ",
+    "tail": "Bệnh tự miễn",
+    "tail_type": "Condition",
+    "group": "physical_health"
   },
   {
     "head": "Thiền định",
@@ -24,7 +32,7 @@
     "head": "Liệu pháp Hệ thống Gia đình Nội tâm (IFS)",
     "head_type": "Remedy",
     "relation": "SUPPORTS_PROCESSING",
-    "tail": "Tổn thương cũ",
+    "tail": "Tổn thương quá khứ | Nội kết (Exiles ) ",
     "tail_type": "Psychological_Factor"
   },
   {
@@ -42,28 +50,28 @@
     "tail_type": "Condition"
   },
   {
-    "head": "Tổn thương cũ",
+    "head": "Tổn thương quá khứ | Nội kết (Exiles ) ",
     "head_type": "Psychological_Factor",
     "relation": "INCREASES_RISK_OF",
     "tail": "Lo lắng bất an",
     "tail_type": "Condition"
   },
   {
-    "head": "Tổn thương cũ",
+    "head": "Tổn thương quá khứ | Nội kết (Exiles ) ",
     "head_type": "Psychological_Factor",
     "relation": "INCREASES_RISK_OF",
     "tail": "Trầm cảm",
     "tail_type": "Condition"
   },
   {
-    "head": "Tổn thương cũ",
+    "head": "Tổn thương quá khứ | Nội kết (Exiles ) ",
     "head_type": "Psychological_Factor",
     "relation": "INCREASES_RISK_OF",
     "tail": "Căng thẳng (kể cả mãn tính)",
     "tail_type": "Condition"
   },
   {
-    "head": "Tổn thương cũ",
+    "head": "Tổn thương quá khứ | Nội kết (Exiles ) ",
     "head_type": "Psychological_Factor",
     "relation": "LEADS_TO",
     "tail": "Cảm xúc bị kìm nén",
